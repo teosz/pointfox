@@ -8,7 +8,11 @@ pub fn move()
         process_status("cp" , [~"-rf", ~"../templates/", ~"../.web/"]);
 
 }
+pub fn modifify()
+{
+        process_status("sh" , [~"../models/.initadd.sh"]);
 
+}
 
 
 
