@@ -2,7 +2,6 @@ extern mod std;
 mod models;
 fn main()
 {
-
-    models::add(~"user", ~"Mihai");
-    models::add(~"azi", ~"maine");
+    let file = ~"index.html";
+    models::add(~"user", ~"Mihai", file);
 }

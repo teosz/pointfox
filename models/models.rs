@@ -1,10 +1,7 @@
 use std::run::process_status;
 
-pub fn add(name:  ~str, value: ~str)
+pub fn add(name:  ~str, value: ~str, file: ~str)
 {
-    print(name);
-    print(value);
-    process_status("sh", [~".replace.sh", name,value]); 
-    
+    process_status("sh", [~"../../models/.replace.sh", name,value,file]);     
 }
 
